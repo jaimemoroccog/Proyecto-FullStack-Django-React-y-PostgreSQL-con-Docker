@@ -1,0 +1,179 @@
+/* Estilos generales */
+.container {
+  width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el input y el botón de agregar */
+.input-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+}
+
+.input-group button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.input-group button:hover {
+  background-color: #45a049;
+}
+
+.input-group button:disabled {
+  background-color: #ccc;
+  cursor: default;
+}
+
+/* Estilos para la lista de items */
+.item-list {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+.item:hover {
+  background-color: #dbdbdb;
+  border-radius: 6px;
+}
+
+.item-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.item-name {
+  flex-grow: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+.item-actions {
+  display: flex;
+  gap: 5px;
+}
+
+/* Estilos para la edición de items */
+.edit-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.edit-item input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.edit-item input:focus {
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+}
+
+.edit-item button,
+.edit-item .cancel {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.edit-item button {
+  background-color: #2196F3;
+  color: white;
+  margin-right: 5px;
+}
+
+.edit-item button:hover {
+  background-color: #1976D2;
+}
+
+.edit-item .cancel {
+  background-color: #f44336;
+  color: white;
+}
+
+.edit-item .cancel:hover {
+  background-color: #d32f2f;
+}
+
+/* Estilos para mensajes de carga y error */
+.loading-message {
+  color: #888;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: #d32f2f;
+  margin-top: 10px;
+}
+
+/* Estilos para botones con iconos */
+.edit-item button,
+.edit-item .cancel,
+.edit,
+.delete {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-item button svg,
+.edit-item .cancel svg,
+.edit svg,
+.delete svg {
+  width: 16px;
+  height: 16px;
+}
